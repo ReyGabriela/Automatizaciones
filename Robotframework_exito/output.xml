@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.6 on win32)" generated="2024-03-28T12:33:20.449602" rpa="false" schemaversion="5">
+<suite id="s1" name="exitoFeature" source="C:\Users\gabri\PycharmProjects\python_cucumber\Robotframework\Robotframework_exito\TestCases\exitoFeature.robot">
+<test id="s1-t1" name="Iniciar Sesión en el Campus Virtual UCC" line="9">
+<kw name="Abrir Navegador">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-28T12:33:21.106270" level="INFO">Opening browser 'chrome' to base url 'https://www.exito.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-28T12:33:21.105273" elapsed="30.847222"/>
+</kw>
+<status status="PASS" start="2024-03-28T12:33:21.103227" elapsed="30.850274"/>
+</kw>
+<kw name="Ingresar al Campus Virtual">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-28T12:33:51.956483" level="INFO">Typing text 'Jabon' into text field 'xpath:/html/body/div[1]/header/section/div/div[1]/div[2]/form/input'.</msg>
+<arg>xpath:/html/body/div[1]/header/section/div/div[1]/div[2]/form/input</arg>
+<arg>Jabon</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-28T12:33:51.955486" elapsed="0.288703"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-28T12:33:52.245265" level="INFO">Clicking element 'xpath:/html/body/div[1]/header/section/div/div[1]/div[2]/form/button/span'.</msg>
+<arg>xpath:/html/body/div[1]/header/section/div/div[1]/div[2]/form/button/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-28T12:33:52.245265" elapsed="0.373744"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2024-03-28T12:34:03.058692" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-03-28T12:34:03.058692" level="FAIL">Element 'xpath://*[@id="__next"]/main/section[3]/div/div[2]/div[2]/div[2]/ul/li[1]/article/div/div[3]/button/svg' not visible after 10 seconds.</msg>
+<arg>xpath://*[@id="__next"]/main/section[3]/div/div[2]/div[2]/div[2]/ul/li[1]/article/div/div[3]/button/svg</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2024-03-28T12:33:52.620095" elapsed="10.490798">Element 'xpath://*[@id="__next"]/main/section[3]/div/div[2]/div[2]/div[2]/ul/li[1]/article/div/div[3]/button/svg' not visible after 10 seconds.</status>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<arg>window.scrollBy(0, 500)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" start="2024-03-28T12:34:03.110893" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="__next"]/main/section[3]/div/div[2]/div[2]/div[2]/ul/li[1]/article/div/div[3]/button/svg</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-28T12:34:03.111890" elapsed="0.000000"/>
+</kw>
+<doc>Como usuario, quiero poder iniciar sesión en el Campus Virtual de la Universidad para acceder a los recursos y cursos.</doc>
+<status status="FAIL" start="2024-03-28T12:33:51.954490" elapsed="11.157400">Element 'xpath://*[@id="__next"]/main/section[3]/div/div[2]/div[2]/div[2]/ul/li[1]/article/div/div[3]/button/svg' not visible after 10 seconds.</status>
+</kw>
+<kw name="Cerrar Navegador">
+<status status="NOT RUN" start="2024-03-28T12:34:03.118001" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-03-28T12:33:21.102170" elapsed="42.016865">Element 'xpath://*[@id="__next"]/main/section[3]/div/div[2]/div[2]/div[2]/ul/li[1]/article/div/div[3]/button/svg' not visible after 10 seconds.</status>
+</test>
+<status status="FAIL" start="2024-03-28T12:33:20.452717" elapsed="42.668564"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="exitoFeature">exitoFeature</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
