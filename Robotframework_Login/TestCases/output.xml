@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.6 on win32)" generated="2024-05-13T20:22:23.067686" rpa="false" schemaversion="5">
+<suite id="s1" name="LoginRobotFramework" source="C:\Users\gabri\PycharmProjects\python_cucumber\Robotframework\Robotframework_Login\TestCases\LoginRobotFramework.robot">
+<test id="s1-t1" name="Gabriela Wants To Enter Her University Campus Page" line="16">
+<kw name="Open Browser And Navigate To Campus">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-13T20:22:23.392501" level="INFO">Opening browser 'Chrome' to base url 'https://campusvirtual.ucc.edu.co/d2l/loginh/?logout=1'.</msg>
+<msg time="2024-05-13T20:22:25.780159" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-05-13T20:22:25.780159" level="FAIL">WebDriverException: Message: no such execution context
+  (Session info: chrome=124.0.6367.119)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7A6F01522+60802]
+	(No symbol) [0x00007FF7A6E7AC22]
+	(No symbol) [0x00007FF7A6D37B13]
+	(No symbol) [0x00007FF7A6D205E0]
+	(No symbol) [0x00007FF7A6D1EC3D]
+	(No symbol) [0x00007FF7A6D1F3FF]
+	(No symbol) [0x00007FF7A6D2E97E]
+	(No symbol) [0x00007FF7A6D457CF]
+	(No symbol) [0x00007FF7A6D4B38A]
+	(No symbol) [0x00007FF7A6D1FB85]
+	(No symbol) [0x00007FF7A6D453AE]
+	(No symbol) [0x00007FF7A6DCA0FF]
+	(No symbol) [0x00007FF7A6DAA923]
+	(No symbol) [0x00007FF7A6D78FEC]
+	(No symbol) [0x00007FF7A6D79C21]
+	GetHandleVerifier [0x00007FF7A72041BD+3217949]
+	GetHandleVerifier [0x00007FF7A7246157+3488183]
+	GetHandleVerifier [0x00007FF7A723F0DF+3459391]
+	GetHandleVerifier [0x00007FF7A6FBB8E6+823622]
+	(No symbol) [0x00007FF7A6E85FBF]
+	(No symbol) [0x00007FF7A6E80EE4]
+	(No symbol) [0x00007FF7A6E81072]
+	(No symbol) [0x00007FF7A6E718C4]
+	BaseThreadInitThunk [0x00007FFB52437344+20]
+	RtlUserThreadStart [0x00007FFB534626B1+33]
+</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2024-05-13T20:22:23.391430" elapsed="2.549564">WebDriverException: Message: no such execution context
+  (Session info: chrome=124.0.6367.119)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7A6F01522+60802]
+	(No symbol) [0x00007FF7A6E7AC22]
+	(No symbol) [0x00007FF7A6D37B13]
+	(No symbol) [0x00007FF7A6D205E0]
+	(No symbol) [0x00007FF7A6D1EC3D]
+	(No symbol) [0x00007FF7A6D1F3FF]
+	(No symbol) [0x00007FF7A6D2E97E]
+	(No symbol) [0x00007FF7A6D457CF]
+	(No symbol) [0x00007FF7A6D4B38A]
+	(No symbol) [0x00007FF7A6D1FB85]
+	(No symbol) [0x00007FF7A6D453AE]
+	(No symbol) [0x00007FF7A6DCA0FF]
+	(No symbol) [0x00007FF7A6DAA923]
+	(No symbol) [0x00007FF7A6D78FEC]
+	(No symbol) [0x00007FF7A6D79C21]
+	GetHandleVerifier [0x00007FF7A72041BD+3217949]
+	GetHandleVerifier [0x00007FF7A7246157+3488183]
+	GetHandleVerifier [0x00007FF7A723F0DF+3459391]
+	GetHandleVerifier [0x00007FF7A6FBB8E6+823622]
+	(No symbol) [0x00007FF7A6E85FBF]
+	(No symbol) [0x00007FF7A6E80EE4]
+	(No symbol) [0x00007FF7A6E81072]
+	(No symbol) [0x00007FF7A6E718C4]
+	BaseThreadInitThunk [0x00007FFB52437344+20]
+	RtlUserThreadStart [0x00007FFB534626B1+33]
+</status>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" start="2024-05-13T20:22:25.940994" elapsed="0.000997"/>
+</kw>
+<status status="FAIL" start="2024-05-13T20:22:23.390394" elapsed="2.551597">WebDriverException: Message: no such execution context
+  (Session info: chrome=124.0.6367.119)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7A6F01522+60802]
+	(No symbol) [0x00007FF7A6E7AC22]
+	(No symbol) [0x00007FF7A6D37B13]
+	(No symbol) [0x00007FF7A6D205E0]
+	(No symbol) [0x00007FF7A6D1EC3D]
+	(No symbol) [0x00007FF7A6D1F3FF]
+	(No symbol) [0x00007FF7A6D2E97E]
+	(No symbol) [0x00007FF7A6D457CF]
+	(No symbol) [0x00007FF7A6D4B38A]
+	(No symbol) [0x00007FF7A6D1FB85]
+	(No symbol) [0x00007FF7A6D453AE]
+	(No symbol) [0x00007FF7A6DCA0FF]
+	(No symbol) [0x00007FF7A6DAA923]
+	(No symbol) [0x00007FF7A6D78FEC]
+	(No symbol) [0x00007FF7A6D79C21]
+	GetHandleVerifier [0x00007FF7A72041BD+3217949]
+	GetHandleVerifier [0x00007FF7A7246157+3488183]
+	GetHandleVerifier [0x00007FF7A723F0DF+3459391]
+	GetHandleVerifier [0x00007FF7A6FBB8E6+823622]
+	(No symbol) [0x00007FF7A6E85FBF]
+	(No symbol) [0x00007FF7A6E80EE4]
+	(No symbol) [0x00007FF7A6E81072]
+	(No symbol) [0x00007FF7A6E718C4]
+	BaseThreadInitThunk [0x00007FFB52437344+20]
+	RtlUserThreadStart [0x00007FFB534626B1+33]
+</status>
+</kw>
+<kw name="Entering The Information In The Login">
+<status status="NOT RUN" start="2024-05-13T20:22:25.943986" elapsed="0.000000"/>
+</kw>
+<kw name="Validates The Label Of Entering Correctly">
+<status status="NOT RUN" start="2024-05-13T20:22:25.944983" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-13T20:22:25.945981" elapsed="2.758903"/>
+</kw>
+<status status="FAIL" start="2024-05-13T20:22:23.388332" elapsed="5.317712">WebDriverException: Message: no such execution context
+  (Session info: chrome=124.0.6367.119)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7A6F01522+60802]
+	(No symbol) [0x00007FF7A6E7AC22]
+	(No symbol) [0x00007FF7A6D37B13]
+	(No symbol) [0x00007FF7A6D205E0]
+	(No symbol) [0x00007FF7A6D1EC3D]
+	(No symbol) [0x00007FF7A6D1F3FF]
+	(No symbol) [0x00007FF7A6D2E97E]
+	(No symbol) [0x00007FF7A6D457CF]
+	(No symbol) [0x00007FF7A6D4B38A]
+	(No symbol) [0x00007FF7A6D1FB85]
+	(No symbol) [0x00007FF7A6D453AE]
+	(No symbol) [0x00007FF7A6DCA0FF]
+	(No symbol) [0x00007FF7A6DAA923]
+	(No symbol) [0x00007FF7A6D78FEC]
+	(No symbol) [0x00007FF7A6D79C21]
+	GetHandleVerifier [0x00007FF7A72041BD+3217949]
+	GetHandleVerifier [0x00007FF7A7246157+3488183]
+	GetHandleVerifier [0x00007FF7A723F0DF+3459391]
+	GetHandleVerifier [0x00007FF7A6FBB8E6+823622]
+	(No symbol) [0x00007FF7A6E85FBF]
+	(No symbol) [0x00007FF7A6E80EE4]
+	(No symbol) [0x00007FF7A6E81072]
+	(No symbol) [0x00007FF7A6E718C4]
+	BaseThreadInitThunk [0x00007FFB52437344+20]
+	RtlUserThreadStart [0x00007FFB534626B1+33]
+</status>
+</test>
+<status status="FAIL" start="2024-05-13T20:22:23.069770" elapsed="5.654824"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="LoginRobotFramework">LoginRobotFramework</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
