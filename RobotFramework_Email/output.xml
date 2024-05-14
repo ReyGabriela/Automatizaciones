@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.6 on win32)" generated="2024-03-30T11:48:51.373421" rpa="false" schemaversion="5">
+<suite id="s1" name="EmailAuto" source="C:\Users\gabri\PycharmProjects\python_cucumber\Robotframework\RobotFramework_Email\TestCases\EmailAuto.robot">
+<test id="s1-t1" name="Iniciar correo" line="9">
+<kw name="Abrir Navegador">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-30T11:48:51.720492" level="INFO">Opening browser 'chrome' to base url 'https://login.live.com/login.srf?wa=wsignin1.0&amp;rpsnv=16&amp;ct=1698343510&amp;rver=7.0.6738.0&amp;wp=MBI_SSL&amp;wreply=https%3a%2f%2foutlook.live.com%2fowa%2f%3fnlp%3d1%26cobrandid%3dab0455a0-8d03-46b9-b18b-df2f57b9e44c%26RpsCsrfState%3dc692b4c1-7f62-50cd-84db-4b741b778b7e&amp;id=292841&amp;aadredir=1&amp;CBCXT=out&amp;lw=1&amp;fl=dob%2cflname%2cwld&amp;cobrandid=ab0455a0-8d03-46b9-b18b-df2f57b9e44c'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-30T11:48:51.719495" elapsed="3.240157"/>
+</kw>
+<status status="PASS" start="2024-03-30T11:48:51.718499" elapsed="3.242149"/>
+</kw>
+<kw name="Ingresar al Correo">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=/html/body/div[1]/div/div[2]/div[1]/div/div/div/div[1]/div[2]/div/div/div/form/div[2]/div/div/input</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-03-30T11:48:54.976605" elapsed="1.083106"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-30T11:48:56.060708" level="INFO">Clicking element 'xpath=/html/body/div[1]/div/div[2]/div[1]/div/div/div/div[1]/div[2]/div/div/div/form/div[2]/div/div/input'.</msg>
+<arg>xpath=/html/body/div[1]/div/div[2]/div[1]/div/div/div/div[1]/div[2]/div/div/div/form/div[2]/div/div/input</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-30T11:48:56.059711" elapsed="0.085770"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-30T11:48:56.146478" level="INFO">Typing text 'gabriela.rey@campusucc.edu.co' into text field 'xpath=/html/body/div[1]/div/div[2]/div[1]/div/div/div/div[1]/div[2]/div/div/div/form/div[2]/div/div/input'.</msg>
+<arg>xpath=/html/body/div[1]/div/div[2]/div[1]/div/div/div/div[1]/div[2]/div/div/div/form/div[2]/div/div/input</arg>
+<arg>gabriela.rey@campusucc.edu.co</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-30T11:48:56.146478" elapsed="0.328132"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-30T11:48:56.475599" level="INFO">Clicking element 'xpath=/html/body/div[1]/div/div[2]/div[1]/div/div/div/div[1]/div[2]/div/div/div/form/div[4]/div/div/div/div/button'.</msg>
+<arg>xpath=/html/body/div[1]/div/div[2]/div[1]/div/div/div/div[1]/div[2]/div/div/div/form/div[4]/div/div/div/div/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-30T11:48:56.475599" elapsed="0.085771"/>
+</kw>
+<doc>Como usuario, quiero enviar un correo de outlook de mi correo institucional.</doc>
+<status status="PASS" start="2024-03-30T11:48:54.976605" elapsed="1.584765"/>
+</kw>
+<kw name="Ingresar contraseña">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=i0118</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-03-30T11:48:56.570347" elapsed="3.600189"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-30T11:49:00.173524" level="INFO">Clicking element 'id=i0118'.</msg>
+<arg>id=i0118</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-30T11:49:00.171520" elapsed="0.141622"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-30T11:49:00.318146" level="INFO">Typing text 'UniUCC!!' into text field 'id=i0118'.</msg>
+<arg>id=i0118</arg>
+<arg>UniUCC!!</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-30T11:49:00.315164" elapsed="0.212406"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=idSIButton9</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-03-30T11:49:00.527570" elapsed="0.125675"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-30T11:49:00.654229" level="INFO">Clicking element 'id=idSIButton9'.</msg>
+<arg>id=idSIButton9</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-30T11:49:00.654229" elapsed="0.733042"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=/html/body/div/form/div/div/div[2]/div[2]/div/div/div/div/div/div[3]/div/div[2]/div/div[3]/div[2]/div/div/div[1]/input</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-03-30T11:49:01.388268" elapsed="0.577461"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-30T11:49:01.969729" level="INFO">Clicking element 'xpath=/html/body/div/form/div/div/div[2]/div[2]/div/div/div/div/div/div[3]/div/div[2]/div/div[3]/div[2]/div/div/div[1]/input'.</msg>
+<arg>xpath=/html/body/div/form/div/div/div[2]/div[2]/div/div/div/div/div/div[3]/div/div[2]/div/div[3]/div[2]/div/div/div[1]/input</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-30T11:49:01.968730" elapsed="2.622207"/>
+</kw>
+<doc>Como usuario, quiero enviar un correo de outlook de mi correo institucional.</doc>
+<status status="PASS" start="2024-03-30T11:48:56.569349" elapsed="8.021588"/>
+</kw>
+<kw name="Enviar correo">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=/html/body/div[1]/div/div[2]/div/div[2]/div[1]/div/div[2]/div[1]/div/div/div[1]/div/div/div/div/div/div/div/div/div[1]/div/div/div/div[1]/div/div/span/button[1]/span/span[1]/span</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-03-30T11:49:04.592932" elapsed="5.232991"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-30T11:49:09.825923" level="INFO">Clicking element 'xpath=/html/body/div[1]/div/div[2]/div/div[2]/div[1]/div/div[2]/div[1]/div/div/div[1]/div/div/div/div/div/div/div/div/div[1]/div/div/div/div[1]/div/div/span/button[1]/span/span[1]/span'.</msg>
+<arg>xpath=/html/body/div[1]/div/div[2]/div/div[2]/div[1]/div/div[2]/div[1]/div/div/div[1]/div/div/div/div/div/div/div/div/div[1]/div/div/div/div[1]/div/div/span/button[1]/span/span[1]/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-30T11:49:09.825923" elapsed="0.517617"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2024-03-30T11:49:13.901034" level="INFO">Suppressing StaleElementReferenceException from Selenium.</msg>
+<arg>//*[@id="docking_InitVisiblePart_0"]/div/div[3]/div[1]/div/div[4]/div/div/div[1]</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-03-30T11:49:10.343540" elapsed="4.892922"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-30T11:49:15.237460" level="INFO">Clicking element 'xpath=//*[@id="docking_InitVisiblePart_0"]/div/div[3]/div[1]/div/div[4]/div/div/div[1]'.</msg>
+<arg>xpath=//*[@id="docking_InitVisiblePart_0"]/div/div[3]/div[1]/div/div[4]/div/div/div[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-30T11:49:15.236462" elapsed="0.544545"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-30T11:49:15.782005" level="INFO">Typing text 'gabriela.rey@campusucc.edu.co' into text field 'xpath=//*[@id="docking_InitVisiblePart_0"]/div/div[3]/div[1]/div/div[4]/div/div/div[1]'.</msg>
+<arg>xpath=//*[@id="docking_InitVisiblePart_0"]/div/div[3]/div[1]/div/div[4]/div/div/div[1]</arg>
+<arg>gabriela.rey@campusucc.edu.co</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-30T11:49:15.781007" elapsed="0.636300"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-30T11:49:16.418304" level="INFO">Clicking element 'xpath=/html/body/div[1]/div/div[2]/div/div[2]/div[2]/div/div/div/div[3]/div/div/div[3]/div[1]/div/div/div/div[3]/div[2]/div[2]/div/div/div/input'.</msg>
+<arg>xpath=/html/body/div[1]/div/div[2]/div/div[2]/div[2]/div/div/div/div[3]/div/div/div[3]/div[1]/div/div/div/div[3]/div[2]/div[2]/div/div/div/input</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-30T11:49:16.418304" elapsed="0.249352"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-30T11:49:16.669633" level="INFO">Typing text 'asunto' into text field 'xpath=/html/body/div[1]/div/div[2]/div/div[2]/div[2]/div/div/div/div[3]/div/div/div[3]/div[1]/div/div/div/div[3]/div[2]/div[2]/div/div/div/input'.</msg>
+<arg>xpath=/html/body/div[1]/div/div[2]/div/div[2]/div[2]/div/div/div/div[3]/div/div/div[3]/div[1]/div/div/div/div[3]/div[2]/div[2]/div/div/div/input</arg>
+<arg>asunto</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-30T11:49:16.668644" elapsed="0.130663"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-30T11:49:16.801281" level="INFO">Clicking element 'xpath=/html/body/div[1]/div/div[2]/div/div[2]/div[2]/div/div/div/div[3]/div/div/div[3]/div[1]/div/div/div/div[4]/div/div/div/div'.</msg>
+<arg>xpath=/html/body/div[1]/div/div[2]/div/div[2]/div[2]/div/div/div/div[3]/div/div/div[3]/div[1]/div/div/div/div[4]/div/div/div/div</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-30T11:49:16.800311" elapsed="0.149572"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-30T11:49:16.950880" level="INFO">Typing text 'bodycorreooo' into text field 'xpath=/html/body/div[1]/div/div[2]/div/div[2]/div[2]/div/div/div/div[3]/div/div/div[3]/div[1]/div/div/div/div[4]/div/div/div'.</msg>
+<arg>xpath=/html/body/div[1]/div/div[2]/div/div[2]/div[2]/div/div/div/div[3]/div/div/div[3]/div[1]/div/div/div/div[4]/div/div/div</arg>
+<arg>bodycorreooo</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-30T11:49:16.950880" elapsed="0.224400"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-30T11:49:17.175280" level="INFO">Clicking element 'xpath=/html/body/div[1]/div/div[2]/div/div[2]/div[2]/div/div/div/div[3]/div/div/div[3]/div[1]/div/div/div/div[2]/div[1]/div/span/button[1]/span'.</msg>
+<arg>xpath=/html/body/div[1]/div/div[2]/div/div[2]/div[2]/div/div/div/div[3]/div/div/div[3]/div[1]/div/div/div/div[2]/div[1]/div/span/button[1]/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-30T11:49:17.175280" elapsed="0.173536"/>
+</kw>
+<doc>Como usuario, quiero enviar un correo de outlook de mi correo institucional.</doc>
+<status status="PASS" start="2024-03-30T11:49:04.592932" elapsed="12.755884"/>
+</kw>
+<kw name="Revisar envio correo">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=/html/body/div[3]/div/div[1]/div/button[1]/div/div[2]</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-03-30T11:49:17.356795" elapsed="5.971187"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-30T11:49:23.329991" elapsed="2.897375"/>
+</kw>
+<status status="PASS" start="2024-03-30T11:49:17.355798" elapsed="8.871568"/>
+</kw>
+<status status="PASS" start="2024-03-30T11:48:51.718499" elapsed="34.509749"/>
+</test>
+<status status="PASS" start="2024-03-30T11:48:51.376415" elapsed="34.855821"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="EmailAuto">EmailAuto</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

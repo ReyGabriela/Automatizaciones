@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.6 on win32)" generated="2024-05-13T21:18:01.197222" rpa="false" schemaversion="5">
+<suite id="s1" name="EmailAuto" source="C:\Users\gabri\PycharmProjects\python_cucumber\Robotframework\RobotFramework_Email\TestCases\EmailAuto.robot">
+<test id="s1-t1" name="Iniciar correo" line="9">
+<kw name="Abrir Navegador">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-13T21:18:01.591724" level="INFO">Opening browser 'chrome' to base url 'https://login.live.com/login.srf?wa=wsignin1.0&amp;rpsnv=16&amp;ct=1698343510&amp;rver=7.0.6738.0&amp;wp=MBI_SSL&amp;wreply=https%3a%2f%2foutlook.live.com%2fowa%2f%3fnlp%3d1%26cobrandid%3dab0455a0-8d03-46b9-b18b-df2f57b9e44c%26RpsCsrfState%3dc692b4c1-7f62-50cd-84db-4b741b778b7e&amp;id=292841&amp;aadredir=1&amp;CBCXT=out&amp;lw=1&amp;fl=dob%2cflname%2cwld&amp;cobrandid=ab0455a0-8d03-46b9-b18b-df2f57b9e44c'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-13T21:18:01.590804" elapsed="3.875034"/>
+</kw>
+<status status="PASS" start="2024-05-13T21:18:01.589728" elapsed="3.877064"/>
+</kw>
+<kw name="Ingresar al Correo">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=/html/body/div[1]/div/div[2]/div[1]/div/div/div/div[1]/div[2]/div/div/div/form/div[2]/div/div/input</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-13T21:18:05.469791" elapsed="0.433052"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-13T21:18:05.908313" level="INFO">Clicking element 'xpath=/html/body/div[1]/div/div[2]/div[1]/div/div/div/div[1]/div[2]/div/div/div/form/div[2]/div/div/input'.</msg>
+<arg>xpath=/html/body/div[1]/div/div[2]/div[1]/div/div/div/div[1]/div[2]/div/div/div/form/div[2]/div/div/input</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-13T21:18:05.906335" elapsed="0.109688"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-13T21:18:06.016023" level="INFO">Typing text 'gabriela.rey@campusucc.edu.co' into text field 'xpath=/html/body/div[1]/div/div[2]/div[1]/div/div/div/div[1]/div[2]/div/div/div/form/div[2]/div/div/input'.</msg>
+<arg>xpath=/html/body/div[1]/div/div[2]/div[1]/div/div/div/div[1]/div[2]/div/div/div/form/div[2]/div/div/input</arg>
+<arg>gabriela.rey@campusucc.edu.co</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-13T21:18:06.016023" elapsed="0.388011"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-13T21:18:06.406352" level="INFO">Clicking element 'xpath=/html/body/div[1]/div/div[2]/div[1]/div/div/div/div[1]/div[2]/div/div/div/form/div[4]/div/div/div/div/button'.</msg>
+<arg>xpath=/html/body/div[1]/div/div[2]/div[1]/div/div/div/div[1]/div[2]/div/div/div/form/div[4]/div/div/div/div/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-13T21:18:06.404893" elapsed="0.122470"/>
+</kw>
+<doc>Como usuario, quiero enviar un correo de outlook de mi correo institucional.</doc>
+<status status="PASS" start="2024-05-13T21:18:05.467790" elapsed="1.059573"/>
+</kw>
+<kw name="Ingresar contraseña">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=i0118</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-13T21:18:06.530355" elapsed="3.504659"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-13T21:18:10.036057" level="INFO">Clicking element 'id=i0118'.</msg>
+<arg>id=i0118</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-13T21:18:10.035014" elapsed="0.255551"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-13T21:18:10.291587" level="INFO">Typing text 'UniUCC!!' into text field 'id=i0118'.</msg>
+<arg>id=i0118</arg>
+<arg>UniUCC!!</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-13T21:18:10.290565" elapsed="0.277909"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=idSIButton9</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-13T21:18:10.570502" elapsed="0.040863"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-13T21:18:10.612435" level="INFO">Clicking element 'id=idSIButton9'.</msg>
+<arg>id=idSIButton9</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-13T21:18:10.611365" elapsed="0.584928"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=/html/body/div/form/div/div/div[2]/div[2]/div/div/div/div/div/div[3]/div/div[2]/div/div[3]/div[2]/div/div/div[1]/input</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-13T21:18:11.197335" elapsed="0.440805"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-13T21:18:11.642137" level="INFO">Clicking element 'xpath=/html/body/div/form/div/div/div[2]/div[2]/div/div/div/div/div/div[3]/div/div[2]/div/div[3]/div[2]/div/div/div[1]/input'.</msg>
+<arg>xpath=/html/body/div/form/div/div/div[2]/div[2]/div/div/div/div/div/div[3]/div/div[2]/div/div[3]/div[2]/div/div/div[1]/input</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-13T21:18:11.639136" elapsed="0.634615"/>
+</kw>
+<doc>Como usuario, quiero enviar un correo de outlook de mi correo institucional.</doc>
+<status status="PASS" start="2024-05-13T21:18:06.529358" elapsed="5.746420"/>
+</kw>
+<kw name="Enviar correo">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2024-05-13T21:18:13.231709" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=124.0.6367.119)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7A6F01522+60802]
+	(No symbol) [0x00007FF7A6E7AC22]
+	(No symbol) [0x00007FF7A6D37CE4]
+	(No symbol) [0x00007FF7A6D1FA14]
+	(No symbol) [0x00007FF7A6D1F8E0]
+	(No symbol) [0x00007FF7A6D3A291]
+	(No symbol) [0x00007FF7A6DC98F9]
+	(No symbol) [0x00007FF7A6DAA923]
+	(No symbol) [0x00007FF7A6D78FEC]
+	(No symbol) [0x00007FF7A6D79C21]
+	GetHandleVerifier [0x00007FF7A72041BD+3217949]
+	GetHandleVerifier [0x00007FF7A7246157+3488183]
+	GetHandleVerifier [0x00007FF7A723F0DF+3459391]
+	GetHandleVerifier [0x00007FF7A6FBB8E6+823622]
+	(No symbol) [0x00007FF7A6E85FBF]
+	(No symbol) [0x00007FF7A6E80EE4]
+	(No symbol) [0x00007FF7A6E81072]
+	(No symbol) [0x00007FF7A6E718C4]
+	BaseThreadInitThunk [0x00007FFB52437344+20]
+	RtlUserThreadStart [0x00007FFB534626B1+33]
+</msg>
+<msg time="2024-05-13T21:18:13.704212" level="FAIL">WebDriverException: Message: target frame detached
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=124.0.6367.119)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7A6F01522+60802]
+	(No symbol) [0x00007FF7A6E7AC22]
+	(No symbol) [0x00007FF7A6D37B13]
+	(No symbol) [0x00007FF7A6D20CC1]
+	(No symbol) [0x00007FF7A6D1EBE4]
+	(No symbol) [0x00007FF7A6D1F3FF]
+	(No symbol) [0x00007FF7A6D3B7B9]
+	(No symbol) [0x00007FF7A6D3C2B3]
+	(No symbol) [0x00007FF7A6D401DB]
+	(No symbol) [0x00007FF7A6D40280]
+	(No symbol) [0x00007FF7A6D86A11]
+	(No symbol) [0x00007FF7A6D86E1C]
+	(No symbol) [0x00007FF7A6DCCE67]
+	(No symbol) [0x00007FF7A6DAABBF]
+	(No symbol) [0x00007FF7A6DCA224]
+	(No symbol) [0x00007FF7A6DAA923]
+	(No symbol) [0x00007FF7A6D78FEC]
+	(No symbol) [0x00007FF7A6D79C21]
+	GetHandleVerifier [0x00007FF7A72041BD+3217949]
+	GetHandleVerifier [0x00007FF7A7246157+3488183]
+	GetHandleVerifier [0x00007FF7A723F0DF+3459391]
+	GetHandleVerifier [0x00007FF7A6FBB8E6+823622]
+	(No symbol) [0x00007FF7A6E85FBF]
+	(No symbol) [0x00007FF7A6E80EE4]
+	(No symbol) [0x00007FF7A6E81072]
+	(No symbol) [0x00007FF7A6E718C4]
+	BaseThreadInitThunk [0x00007FFB52437344+20]
+	RtlUserThreadStart [0x00007FFB534626B1+33]
+</msg>
+<arg>xpath=/html/body/div[1]/div/div[2]/div/div[2]/div[1]/div/div[2]/div[1]/div/div/div[1]/div/div/div/div/div/div/div/div/div[1]/div/div/div/div[1]/div/div/span/button[1]/span/span[1]/span</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2024-05-13T21:18:12.286408" elapsed="1.454339">WebDriverException: Message: target frame detached
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=124.0.6367.119)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7A6F01522+60802]
+	(No symbol) [0x00007FF7A6E7AC22]
+	(No symbol) [0x00007FF7A6D37B13]
+	(No symbol) [0x00007FF7A6D20CC1]
+	(No symbol) [0x00007FF7A6D1EBE4]
+	(No symbol) [0x00007FF7A6D1F3FF]
+	(No symbol) [0x00007FF7A6D3B7B9]
+	(No symbol) [0x00007FF7A6D3C2B3]
+	(No symbol) [0x00007FF7A6D401DB]
+	(No symbol) [0x00007FF7A6D40280]
+	(No symbol) [0x00007FF7A6D86A11]
+	(No symbol) [0x00007FF7A6D86E1C]
+	(No symbol) [0x00007FF7A6DCCE67]
+	(No symbol) [0x00007FF7A6DAABBF]
+	(No symbol) [0x00007FF7A6DCA224]
+	(No symbol) [0x00007FF7A6DAA923]
+	(No symbol) [0x00007FF7A6D78FEC]
+	(No symbol) [0x00007FF7A6D79C21]
+	GetHandleVerifier [0x00007FF7A72041BD+3217949]
+	GetHandleVerifier [0x00007FF7A7246157+3488183]
+	GetHandleVerifier [0x00007FF7A723F0DF+3459391]
+	GetHandleVerifier [0x00007FF7A6FBB8E6+823622]
+	(No symbol) [0x00007FF7A6E85FBF]
+	(No symbol) [0x00007FF7A6E80EE4]
+	(No symbol) [0x00007FF7A6E81072]
+	(No symbol) [0x00007FF7A6E718C4]
+	BaseThreadInitThunk [0x00007FFB52437344+20]
+	RtlUserThreadStart [0x00007FFB534626B1+33]
+</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=/html/body/div[1]/div/div[2]/div/div[2]/div[1]/div/div[2]/div[1]/div/div/div[1]/div/div/div/div/div/div/div/div/div[1]/div/div/div/div[1]/div/div/span/button[1]/span/span[1]/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-13T21:18:13.742763" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//*[@id="docking_InitVisiblePart_0"]/div/div[3]/div[1]/div/div[4]/div/div/div[1]</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2024-05-13T21:18:13.742763" elapsed="0.000975"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="docking_InitVisiblePart_0"]/div/div[3]/div[1]/div/div[4]/div/div/div[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-13T21:18:13.743738" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="docking_InitVisiblePart_0"]/div/div[3]/div[1]/div/div[4]/div/div/div[1]</arg>
+<arg>gabriela.rey@campusucc.edu.co</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-13T21:18:13.744837" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=/html/body/div[1]/div/div[2]/div/div[2]/div[2]/div/div/div/div[3]/div/div/div[3]/div[1]/div/div/div/div[3]/div[2]/div[2]/div/div/div/input</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-13T21:18:13.745733" elapsed="0.000297"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>xpath=/html/body/div[1]/div/div[2]/div/div[2]/div[2]/div/div/div/div[3]/div/div/div[3]/div[1]/div/div/div/div[3]/div[2]/div[2]/div/div/div/input</arg>
+<arg>asunto</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-13T21:18:13.751033" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=/html/body/div[1]/div/div[2]/div/div[2]/div[2]/div/div/div/div[3]/div/div/div[3]/div[1]/div/div/div/div[4]/div/div/div/div</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-13T21:18:13.754032" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>xpath=/html/body/div[1]/div/div[2]/div/div[2]/div[2]/div/div/div/div[3]/div/div/div[3]/div[1]/div/div/div/div[4]/div/div/div</arg>
+<arg>bodycorreooo</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-13T21:18:13.754032" elapsed="0.000995"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=/html/body/div[1]/div/div[2]/div/div[2]/div[2]/div/div/div/div[3]/div/div/div[3]/div[1]/div/div/div/div[2]/div[1]/div/span/button[1]/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-13T21:18:13.755027" elapsed="0.000998"/>
+</kw>
+<doc>Como usuario, quiero enviar un correo de outlook de mi correo institucional.</doc>
+<status status="FAIL" start="2024-05-13T21:18:12.285412" elapsed="1.470613">WebDriverException: Message: target frame detached
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=124.0.6367.119)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7A6F01522+60802]
+	(No symbol) [0x00007FF7A6E7AC22]
+	(No symbol) [0x00007FF7A6D37B13]
+	(No symbol) [0x00007FF7A6D20CC1]
+	(No symbol) [0x00007FF7A6D1EBE4]
+	(No symbol) [0x00007FF7A6D1F3FF]
+	(No symbol) [0x00007FF7A6D3B7B9]
+	(No symbol) [0x00007FF7A6D3C2B3]
+	(No symbol) [0x00007FF7A6D401DB]
+	(No symbol) [0x00007FF7A6D40280]
+	(No symbol) [0x00007FF7A6D86A11]
+	(No symbol) [0x00007FF7A6D86E1C]
+	(No symbol) [0x00007FF7A6DCCE67]
+	(No symbol) [0x00007FF7A6DAABBF]
+	(No symbol) [0x00007FF7A6DCA224]
+	(No symbol) [0x00007FF7A6DAA923]
+	(No symbol) [0x00007FF7A6D78FEC]
+	(No symbol) [0x00007FF7A6D79C21]
+	GetHandleVerifier [0x00007FF7A72041BD+3217949]
+	GetHandleVerifier [0x00007FF7A7246157+3488183]
+	GetHandleVerifier [0x00007FF7A723F0DF+3459391]
+	GetHandleVerifier [0x00007FF7A6FBB8E6+823622]
+	(No symbol) [0x00007FF7A6E85FBF]
+	(No symbol) [0x00007FF7A6E80EE4]
+	(No symbol) [0x00007FF7A6E81072]
+	(No symbol) [0x00007FF7A6E718C4]
+	BaseThreadInitThunk [0x00007FFB52437344+20]
+	RtlUserThreadStart [0x00007FFB534626B1+33]
+</status>
+</kw>
+<kw name="Revisar envio correo">
+<status status="NOT RUN" start="2024-05-13T21:18:13.763277" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-05-13T21:18:01.589728" elapsed="12.173859">WebDriverException: Message: target frame detached
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=124.0.6367.119)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7A6F01522+60802]
+	(No symbol) [0x00007FF7A6E7AC22]
+	(No symbol) [0x00007FF7A6D37B13]
+	(No symbol) [0x00007FF7A6D20CC1]
+	(No symbol) [0x00007FF7A6D1EBE4]
+	(No symbol) [0x00007FF7A6D1F3FF]
+	(No symbol) [0x00007FF7A6D3B7B9]
+	(No symbol) [0x00007FF7A6D3C2B3]
+	(No symbol) [0x00007FF7A6D401DB]
+	(No symbol) [0x00007FF7A6D40280]
+	(No symbol) [0x00007FF7A6D86A11]
+	(No symbol) [0x00007FF7A6D86E1C]
+	(No symbol) [0x00007FF7A6DCCE67]
+	(No symbol) [0x00007FF7A6DAABBF]
+	(No symbol) [0x00007FF7A6DCA224]
+	(No symbol) [0x00007FF7A6DAA923]
+	(No symbol) [0x00007FF7A6D78FEC]
+	(No symbol) [0x00007FF7A6D79C21]
+	GetHandleVerifier [0x00007FF7A72041BD+3217949]
+	GetHandleVerifier [0x00007FF7A7246157+3488183]
+	GetHandleVerifier [0x00007FF7A723F0DF+3459391]
+	GetHandleVerifier [0x00007FF7A6FBB8E6+823622]
+	(No symbol) [0x00007FF7A6E85FBF]
+	(No symbol) [0x00007FF7A6E80EE4]
+	(No symbol) [0x00007FF7A6E81072]
+	(No symbol) [0x00007FF7A6E718C4]
+	BaseThreadInitThunk [0x00007FFB52437344+20]
+	RtlUserThreadStart [0x00007FFB534626B1+33]
+</status>
+</test>
+<status status="FAIL" start="2024-05-13T21:18:01.199215" elapsed="12.585337"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="EmailAuto">EmailAuto</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-05-13T21:18:13.231709" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=124.0.6367.119)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7A6F01522+60802]
+	(No symbol) [0x00007FF7A6E7AC22]
+	(No symbol) [0x00007FF7A6D37CE4]
+	(No symbol) [0x00007FF7A6D1FA14]
+	(No symbol) [0x00007FF7A6D1F8E0]
+	(No symbol) [0x00007FF7A6D3A291]
+	(No symbol) [0x00007FF7A6DC98F9]
+	(No symbol) [0x00007FF7A6DAA923]
+	(No symbol) [0x00007FF7A6D78FEC]
+	(No symbol) [0x00007FF7A6D79C21]
+	GetHandleVerifier [0x00007FF7A72041BD+3217949]
+	GetHandleVerifier [0x00007FF7A7246157+3488183]
+	GetHandleVerifier [0x00007FF7A723F0DF+3459391]
+	GetHandleVerifier [0x00007FF7A6FBB8E6+823622]
+	(No symbol) [0x00007FF7A6E85FBF]
+	(No symbol) [0x00007FF7A6E80EE4]
+	(No symbol) [0x00007FF7A6E81072]
+	(No symbol) [0x00007FF7A6E718C4]
+	BaseThreadInitThunk [0x00007FFB52437344+20]
+	RtlUserThreadStart [0x00007FFB534626B1+33]
+</msg>
+</errors>
+</robot>
