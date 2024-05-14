@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.6 on win32)" generated="2024-04-23T19:21:18.552094" rpa="false" schemaversion="5">
+<suite id="s1" name="LoginRobotFramework" source="C:\Users\gabri\PycharmProjects\python_cucumber\Robotframework\Robotframework_timonel\TestCases\LoginRobotFramework.robot">
+<test id="s1-t1" name="Iniciar Sesión en timonel y revisar pensum" line="10">
+<kw name="Abrir Navegador en Modo Maximizado">
+<kw name="Get Driver Path">
+<msg time="2024-04-23T19:21:19.189985" level="FAIL">No keyword with name 'Get Driver Path' found.</msg>
+<var>${driver_path}</var>
+<status status="FAIL" start="2024-04-23T19:21:19.189985" elapsed="0.000000">No keyword with name 'Get Driver Path' found.</status>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<var>${chrome_options}</var>
+<arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
+<arg>sys, selenium.webdriver</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-04-23T19:21:19.190726" elapsed="0.000000"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>--start-maximized</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" start="2024-04-23T19:21:19.190726" elapsed="0.000000"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>browser=${BROWSER}</arg>
+<arg>options=${chrome_options}</arg>
+<arg>executable_path=${driver_path}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="NOT RUN" start="2024-04-23T19:21:19.190726" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-04-23T19:21:19.185585" elapsed="0.006208">No keyword with name 'Get Driver Path' found.</status>
+</kw>
+<kw name="Ingresar a timonel">
+<doc>Como usuario, quiero poder iniciar sesión en el Campus Virtual de la Universidad para acceder a los recursos y cursos.</doc>
+<status status="NOT RUN" start="2024-04-23T19:21:19.192723" elapsed="0.000000"/>
+</kw>
+<kw name="Buscar progreso academico">
+<doc>Como usuario, quiero poder iniciar sesión en el Campus Virtual de la Universidad para acceder a los recursos y cursos.</doc>
+<status status="NOT RUN" start="2024-04-23T19:21:19.193169" elapsed="0.000000"/>
+</kw>
+<kw name="Cerrar Navegador">
+<status status="NOT RUN" start="2024-04-23T19:21:19.194115" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-04-23T19:21:19.184171" elapsed="0.010457">No keyword with name 'Get Driver Path' found.</status>
+</test>
+<status status="FAIL" start="2024-04-23T19:21:18.555125" elapsed="0.641902"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="LoginRobotFramework">LoginRobotFramework</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-04-23T19:21:19.180900" level="ERROR">Error in file 'C:\Users\gabri\PycharmProjects\python_cucumber\Robotframework\Robotframework_timonel\TestCases\LoginRobotFramework.robot' on line 3: Importing library 'C:\Users\gabri\PycharmProjects\python_cucumber\Robotframework\Robotframework_timonel\TestCases\driver_manager.py' failed: ModuleNotFoundError: No module named 'webdriver_manager'
+Traceback (most recent call last):
+  File "C:\Users\gabri\PycharmProjects\python_cucumber\Robotframework\Robotframework_timonel\TestCases\driver_manager.py", line 2, in &lt;module&gt;
+    from webdriver_manager.chrome import ChromeDriverManager
+PYTHONPATH:
+  C:\Users\gabri\PycharmProjects\python_cucumber\Robotframework\Robotframework_timonel\TestCases
+  C:\Users\gabri\AppData\Local\Programs\Python\Python311\Scripts\robot.exe
+  C:\Users\gabri\AppData\Local\Programs\Python\Python311\python311.zip
+  C:\Users\gabri\AppData\Local\Programs\Python\Python311\DLLs
+  C:\Users\gabri\AppData\Local\Programs\Python\Python311\Lib
+  C:\Users\gabri\AppData\Local\Programs\Python\Python311
+  C:\Users\gabri\AppData\Local\Programs\Python\Python311\Lib\site-packages</msg>
+</errors>
+</robot>
